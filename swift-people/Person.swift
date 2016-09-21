@@ -4,8 +4,8 @@ import Foundation
 
 class Person {
     let name: String
-    private(set) var ageInYears: Int?
-    private(set) var skills = Set<String>()
+    fileprivate(set) var ageInYears: Int?
+    fileprivate(set) var skills = Set<String>()
     
     var qualifiedTutor: Bool { return skills.count >= 4 }
     
@@ -25,13 +25,13 @@ class Person {
     
     func celebrateBirthday() -> String {
         if var age = self.ageInYears {
-            age++
+            age += 1
             self.ageInYears = age
             let ordinal = age.ordinal()
-            let message = "HAPPY \(age)\(ordinal.uppercaseString) BIRTHDAY, \(name.uppercaseString)!!!"
+            let message = "HAPPY \(age)\(ordinal.uppercased()) BIRTHDAY, \(name.uppercased())!!!"
             return message
         } else {
-            return "HAPPY BIRTHDAY, \(name.uppercaseString)!!!"
+            return "HAPPY BIRTHDAY, \(name.uppercased())!!!"
         }
     }
     

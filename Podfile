@@ -4,8 +4,8 @@
 use_frameworks!
 
 def testing_pods
-  pod 'Quick', '~> 0.8.0'
-  pod 'Nimble', '~> 3.0.0'
+  pod 'Nimble', git: 'https://github.com/Quick/Nimble.git'
+  pod 'Quick', git: 'https://github.com/Quick/Quick.git', branch: 'swift-3.0'
 end
 
 target 'swift-people' do
@@ -16,3 +16,10 @@ target 'swift-peopleTests' do
   testing_pods
 end
 
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
+end
