@@ -19,7 +19,7 @@ class Person {
         self.init(name: name, ageInYears: nil)
     }
     
-    convenience init() {
+    init() {
         self.init(name: "John Doe")
     }
     
