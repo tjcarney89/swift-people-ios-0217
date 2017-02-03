@@ -18,6 +18,7 @@
 		4DEE92851BFCD7AC00132675 /* PersonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE92841BFCD7AC00132675 /* PersonSpec.swift */; };
 		4DEE92871BFCD7C100132675 /* Int+OrdinalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE92861BFCD7C100132675 /* Int+OrdinalSpec.swift */; };
 		DFF13DF05DF1C6CC27C25D3D /* Pods_swift_people.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DBA9A7D2E2B49855526E37 /* Pods_swift_people.framework */; };
+		F002067F1E3FF18D00CA6EC1 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002067E1E3FF18D00CA6EC1 /* People.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6D852823F3C3F11E3AF06174 /* Pods-swift-peopleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-peopleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-peopleTests/Pods-swift-peopleTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2DBA9A7D2E2B49855526E37 /* Pods_swift_people.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_people.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2309185FADDDB992CB7A5B1 /* Pods-swift-people.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-people.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-people/Pods-swift-people.debug.xcconfig"; sourceTree = "<group>"; };
+		F002067E1E3FF18D00CA6EC1 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				4DEE925F1BFBDA3700132675 /* AppDelegate.swift */,
 				4DEE92821BFCD27D00132675 /* Int+Ordinal.swift */,
+				F002067E1E3FF18D00CA6EC1 /* People.swift */,
 				4DEE927F1BFCCC5000132675 /* Resources */,
 			);
 			path = "swift-people";
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F002067F1E3FF18D00CA6EC1 /* People.swift in Sources */,
 				4DEE92621BFBDA3700132675 /* ViewController.swift in Sources */,
 				4DEE92601BFBDA3700132675 /* AppDelegate.swift in Sources */,
 				4DEE92831BFCD27D00132675 /* Int+Ordinal.swift in Sources */,
